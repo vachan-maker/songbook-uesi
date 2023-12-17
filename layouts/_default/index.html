@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-    <link rel="manifest" href="/manifest.json" />
-    <title></title>
-  </head>
-  <body>
-  {{partial "head.html" . }}
+
+  {{define "main"}}
   <article>
   <label for = 'SongNo'>Enter Song Number</label>
   <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
@@ -26,14 +17,9 @@
       }
   </script>
   </article>
-    <aside>
-  <p> Popular Songs </p>
-  <p>blahblah</p>
-  </aside>
   <ul style="list-style-type: none;">
   {{range (sort .Pages "Title")}}
     <li><a href = "{{.Permalink}}"> {{.Params.songno}} &nbsp {{.Title}}</a></li>
   {{end}}
   </ul>
-  </body>
-</html>
+{{end}}

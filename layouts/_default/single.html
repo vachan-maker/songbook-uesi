@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-    <title></title>
-  </head>
-  <body>
-{{partial "head.html" . }}
+{{define "main"}}
 <h3>{{.Params.songno}}. {{.Title}}</h3>
 <p>{{.Params.artist}}</p>
 <p>Key: {{.Params.key}}</p>
   <article>{{.Content}}</article>
-  </body>
-</html>
+{{end}}
