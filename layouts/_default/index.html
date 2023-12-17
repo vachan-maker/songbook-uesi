@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+    <link rel="manifest" href="" />
+    <title></title>
+  </head>
+  <body>
+  {{partial "head.html" . }}
+  <article>
+  <label for = 'SongNo'>Enter Song Number</label>
+  <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
+  <button onClick = 'redirectToSong()'>Go to Song</button>
+  <script>
+   function redirectToSong() {
+      // Get the user input from the text field
+      var songNumber = document.getElementById("SongNo").value;
+
+      // Construct the URL for redirection
+      var redirectURL = songNumber;
+
+      // Redirect the user
+      window.location.href = redirectURL;
+      }
+  </script>
+  </article>
+    <aside>
+  <p> Popular Songs </p>
+  <p>blahblah</p>
+  </aside>
+  <ul style="list-style-type: none;">
+  {{range (sort .Pages "Title")}}
+    <li><a href = "{{.Permalink}}"> {{.Params.songno}} &nbsp {{.Title}}</a></li>
+  {{end}}
+  </ul>
+  </body>
+</html>
