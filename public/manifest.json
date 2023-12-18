@@ -1,0 +1,9 @@
+{
+    "name": "UESI SongBook",
+    "short_name": "UESI Songs",
+    "description": "The Songbook of UESI",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#FFFFFF"
+}
