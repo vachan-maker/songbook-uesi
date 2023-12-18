@@ -19,7 +19,7 @@
   </article>
   <ul style="list-style-type: none;">
   {{range (sort .Pages "Title")}}
-    <li><a href = "{{.Permalink}}"> {{.Params.songno}} &nbsp {{.Title}}</a></li>
+    <li><strong>{{.Params.songno}}</strong>&nbsp<a href = "{{.Permalink}}">{{.Title}}</a></li>
   {{end}}
   </ul>
 {{end}}
