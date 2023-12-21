@@ -1,6 +1,6 @@
 
   {{define "main"}}
-  <section>
+  <main>
   <label for = 'SongNo'>Enter Song Number</label>
   <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
   <button onClick = 'redirectToSong()'>Go to Song</button>
@@ -16,10 +16,12 @@
       window.location.href = redirectURL;
       }
   </script>
-  </section>
+  <article>
   <ul style="list-style-type: none;">
   {{range (sort .Pages "Title")}}
     <li><strong>{{.Params.songno}}</strong>&nbsp<a href = "{{.Permalink}}">{{.Title}}</a></li>
   {{end}}
   </ul>
+  </article>
+</main>
 {{end}}

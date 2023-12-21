@@ -1,4 +1,6 @@
 baseURL = "https://uesisongs.netlify.app/"
 languageCode = "en-us"
 title = "UESI SongBook"
+[taxonomies]
+    artist = "artist"
 
