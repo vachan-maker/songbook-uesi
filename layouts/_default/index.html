@@ -17,11 +17,20 @@
       }
   </script>
   <article>
-  <ul style="list-style-type: none;">
-  {{range (sort .Pages "Title")}}
-    <li><strong>{{.Params.songno}}</strong>&nbsp<a href = "{{.Permalink}}">{{.Title}}</a></li>
-  {{end}}
-  </ul>
+  <table>
+  	<thead>
+  		<tr>
+  			<th scope = "col">Song Number</th>
+  			<th scope = "col">Title</th>
+  		</tr>
+  	</thead>
+  	 {{range (sort .Pages "Title")}}
+  	<tr>
+  		<th scope = "row">{{.Params.songno}}</th>
+		<td><a href = "{{.Permalink}}">{{.Title}}</a></td>
+	</tr>
+	{{end}}
+  </table>
   </article>
 </main>
 {{end}}
