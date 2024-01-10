@@ -17,15 +17,14 @@
     <h3>UESI Song Book</h3>
     <nav>
       <a href = "/">Home</a>
-<div id="search"></div>
+    </nav>
+  </header>
+  <div id="search"></div>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#search", showSubResults: true });
     });
 </script>
-
-    </nav>
-  </header>
     {{ block "main" . }}
     {{ end }}
   </body>
