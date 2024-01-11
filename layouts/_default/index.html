@@ -1,6 +1,5 @@
 
   {{define "main"}}
-  <main class = "container">
   <section>
   <label for = 'SongNo'>Enter Song Number</label>
   <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
@@ -18,14 +17,11 @@
       }
   </script>
   </section>
-  <article>
-  <ul>
-  	 {{range (sort .Pages "Title")}}
+  <main>
   	<ul>
-  		<li>{{.Params.songno}}<a href = "{{.Permalink}}">{{.Title}}</a></li>
+  	  	 {{range (sort .Pages "Title")}}
+  		<li>{{.Params.songno}}&nbsp<a href = "{{.Permalink}}">{{.Title}}</a></li>
+  		{{end}}
 	</ul>
-	{{end}}
-  </ul>
-  </article>
 </main>
 {{end}}
