@@ -1,26 +1,17 @@
 
   {{define "main"}}
   <section>
-  <label for = 'SongNo'>Enter Song Number</label>
-  <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
-  <button onClick = 'redirectToSong()'>Go to Song</button>
-  <script>
-   function redirectToSong() {
-      // Get the user input from the text field
-      var songNumber = document.getElementById("SongNo").value;
-
-      // Construct the URL for redirection
-      var redirectURL = songNumber;
-
-      // Redirect the user
-      window.location.href = redirectURL;
-      }
-  </script>
+  <div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
   </section>
   <main>
   	<ul>
   	  	 {{range (sort .Pages "Title")}}
-  		<li>{{.Params.songno}}&nbsp<a href = "{{.Permalink}}">{{.Title}}</a></li>
+  		<li>{{.Params.songno}}&nbsp;<a href = "{{.Permalink}}">{{.Title}}</a></li>
   		{{end}}
 	</ul>
 </main>

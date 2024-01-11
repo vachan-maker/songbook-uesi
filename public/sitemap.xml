@@ -5,7 +5,13 @@
     <loc>https://uesisongs.netlify.app/hindi/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://uesisongs.netlify.app/malayalam/2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://uesisongs.netlify.app/malayalam/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://uesisongs.netlify.app/tamil/</loc>
     <priority>0</priority>
   </url><url>
     <loc>https://uesisongs.netlify.app/336/</loc>
@@ -333,6 +339,8 @@
     <loc>https://uesisongs.netlify.app/artist/zschech-darlene/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/hindi/dhanyavadkesath/</loc>
+  </url><url>
+    <loc>https://uesisongs.netlify.app/tamil/papangal/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/malayalam/1/</loc>
   </url>
