@@ -1,8 +1,10 @@
 {{define "main"}}
 <main class = "container">
-<h3>{{and .Params.songno .Params.lang "en"}}. {{.Title}}</h3>
-{{if .Params.transliterated}}
-<a href = "/malayalam/{{.Params.songno}}">Malayalam Transliteration</a>
+<h3>{{.Params.songno}}. {{.Title}}</h3>
+{{if and .Params.transliterated .Params.lang "en"}}
+<p align = 'center'><a href = "/malayalam/{{.Params.songno}}">Malayalam Transliteration</a></p>
+{{  else  }}
+<p align = 'center'><a href = "/{{.Params.songno}}">English Transliteration</a></p>
 {{end}}
 <i>{{.Params.artist}}</i>
 <i>Key: {{.Params.key}}</i>
