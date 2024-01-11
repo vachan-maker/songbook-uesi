@@ -19,20 +19,13 @@
   </script>
   </section>
   <article>
-  <table>
-  	<thead>
-  		<tr>
-  			<th scope = "col">Song Number</th>
-  			<th scope = "col">Title</th>
-  		</tr>
-  	</thead>
+  <ul>
   	 {{range (sort .Pages "Title")}}
-  	<tr>
-  		<th scope = "row">{{.Params.songno}}</th>
-		<td><a href = "{{.Permalink}}">{{.Title}}</a></td>
-	</tr>
+  	<ul>
+  		<li>{{.Params.songno}}<a href = "{{.Permalink}}">{{.Title}}</a></li>
+	</ul>
 	{{end}}
-  </table>
+  </ul>
   </article>
 </main>
 {{end}}

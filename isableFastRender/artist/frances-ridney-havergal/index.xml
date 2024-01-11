@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frances Ridney Havergal on UESI SongBook</title>
+    <link>http://localhost:1313/artist/frances-ridney-havergal/</link>
+    <description>Recent content in Frances Ridney Havergal on UESI SongBook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:1313/artist/frances-ridney-havergal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Take My Life and Let it Be</title>
+      <link>http://localhost:1313/330/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/330/</guid>
+      <description>1 Take my life and let it be
+consecrated, Lord, to thee.
+Take my moments and my days;
+let them flow in endless praise,
+let them flow in endless praise.
+2 Take my hands and let them move
+at the impulse of thy love.
+Take my feet and let them be
+swift and beautiful for thee,
+swift and beautiful for thee.
+3 Take my voice and let me sing
+always, only, for my King.</description>
+    </item>
+    
+  </channel>
+</rss>
