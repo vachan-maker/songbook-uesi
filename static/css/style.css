@@ -51,6 +51,9 @@ nav strong {
 ul {
   list-style-type: none;
 }
+li {
+  margin: 5px;
+}
 footer {
   background-color: #eee;
   text-align:center;
