@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://uesisongs.netlify.app/hindi/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://uesisongs.netlify.app/malayalam/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://uesisongs.netlify.app/336/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/326/</loc>
@@ -34,7 +40,7 @@
   </url><url>
     <loc>https://uesisongs.netlify.app/280/</loc>
   </url><url>
-    <loc>https://uesisongs.netlify.app/1/</loc>
+    <loc>https://uesisongs.netlify.app/english/1/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/265/</loc>
   </url><url>
@@ -71,6 +77,8 @@
     <loc>https://uesisongs.netlify.app/artist/doug-horley/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/284/</loc>
+  </url><url>
+    <loc>https://uesisongs.netlify.app/english/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/342/</loc>
   </url><url>
@@ -128,11 +136,15 @@
   </url><url>
     <loc>https://uesisongs.netlify.app/339/</loc>
   </url><url>
+    <loc>https://uesisongs.netlify.app/358/</loc>
+  </url><url>
     <loc>https://uesisongs.netlify.app/353/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/338/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/268/</loc>
+  </url><url>
+    <loc>https://uesisongs.netlify.app/359/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/310/</loc>
   </url><url>
@@ -149,6 +161,8 @@
     <loc>https://uesisongs.netlify.app/309/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/344/</loc>
+  </url><url>
+    <loc>https://uesisongs.netlify.app/1/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/328/</loc>
   </url><url>
@@ -187,8 +201,6 @@
     <loc>https://uesisongs.netlify.app/304/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/311/</loc>
-  </url><url>
-    <loc>https://uesisongs.netlify.app/malayalam/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/artist/matt-reddman/</loc>
   </url><url>
@@ -286,6 +298,8 @@
   </url><url>
     <loc>https://uesisongs.netlify.app/296/</loc>
   </url><url>
+    <loc>https://uesisongs.netlify.app/357/</loc>
+  </url><url>
     <loc>https://uesisongs.netlify.app/293/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/297/</loc>
@@ -317,6 +331,8 @@
     <loc>https://uesisongs.netlify.app/349/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/artist/zschech-darlene/</loc>
+  </url><url>
+    <loc>https://uesisongs.netlify.app/hindi/dhanyavadkesath/</loc>
   </url><url>
     <loc>https://uesisongs.netlify.app/malayalam/1/</loc>
   </url>
