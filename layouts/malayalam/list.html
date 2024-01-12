@@ -17,10 +17,10 @@
       }
   </script>
   </section>
-  <main>
+  <main lang = 'ml'>
   	<ul>
   	  	 {{range (sort .Pages "Title")}}
-  		<li>{{.Params.songno}}&nbsp<a href = "{{.Permalink}}">{{.Title}}</a></li>
+  		<li>{{.Params.songno}}&nbsp;<a href = "{{.Permalink}}">{{.Title}}</a></li>
   		{{end}}
 	</ul>
 </main>
