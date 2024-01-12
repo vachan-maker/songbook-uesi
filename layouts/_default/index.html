@@ -10,7 +10,7 @@
   </section>
   <main>
   	<ul>
-  	  	 {{range (sort .Pages "Title")}}
+  	  	 {{ range .Pages.ByTitle }}
   		<li>{{.Params.songno}}&nbsp;<a href = "{{.Permalink}}">{{.Title}}</a></li>
   		{{end}}
 	</ul>

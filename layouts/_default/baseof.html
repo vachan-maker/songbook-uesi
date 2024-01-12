@@ -10,6 +10,22 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "img//apple-touch-icon.png/favicon-32x32.png" | absURL }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "img//favicon-16x16.png" | absURL }}">
   <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+  if ("serviceWorker" in navigator) {
+  // Register a service worker hosted at the root of the
+  // site using the default scope.
+  navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(
+    (registration) => {
+      console.log("Service worker registration succeeded:", registration);
+    },
+    (error) => {
+      console.error(`Service worker registration failed: ${error}`);
+    },
+  );
+} else {
+  console.error("Service workers are not supported.");
+}
+</script>
     <title>{{ with .Title }}{{ printf "%s | " . }}{{ end }}{{ site.Title }}</title>
   </head>
   <body>
