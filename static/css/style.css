@@ -7,16 +7,21 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
     U+0D01-0D7F, U+200C, U+200D, U+25CC;
 }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
 [lang = 'ml']
 {
   font-family: 'Manjari';
 }
 body {
-  font-family: sans-serif;
-  max-width: 48rem;
+  font-size: 1.10rem;
+	max-width: 55rem;
   margin: 0 auto;
   box-shadow: 0 0 2rem 0 #bbb;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 article {
   text-align: center;
@@ -31,41 +36,48 @@ section input {
 }
 section button {
   padding: 0.5rem;
+}	
+header {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 50px;
+	box-shadow: 0 1px 8px #ddd;
 }
-nav {
-  background-color: #17a;
+header li {
+	display: inline-block;
+	list-style:none;
+	padding: 0 20px;
 }
-nav ul {
+#nav_title {
+	margin-right: auto;
+	font-size:1.5em;
+}
+@media all and (max-width: 600px) {
+	header {
+	flex-direction: column;
+	justify-content: flex-stat;
+}
+}	
+.song_list {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  
 }
-nav li {
-  padding: 0.5rem;
-  color:white;
+.song_list_item {
+	display: flex;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 5px;
+	text-transform: capitalize;
+	
 }
-nav li * {
-  display: block;
-}
-nav a {
-  text-decoration: none;
-}
-nav a, nav a:visited, nav a:active {
-  color: inherit;
-}
-nav a:hover {
-  background: #069;
-}
-nav strong {
-  color: white;
-  padding-right: 2rem;
-}
-ul {
-  list-style-type: none;
-}
-li {
-  margin: 5px;
+.song_list_songno {
+	display: flex;
 }
 footer {
   background-color: #eee;
