@@ -42,6 +42,7 @@ header {
 	justify-content: flex-end;
 	padding: 20px 50px;
 	box-shadow: 0 1px 8px #ddd;
+	margin-bottom: 2rem;
 }
 header li {
 	display: inline-block;
