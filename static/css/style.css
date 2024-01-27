@@ -7,23 +7,39 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
     U+0D01-0D7F, U+200C, U+200D, U+25CC;
 }
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
 [lang = 'ml']
 {
   font-family: 'Manjari';
 }
 body {
+  color: #fafafa;
+  background-color: #222222;
   font-family: sans-serif;
-  max-width: 48rem;
-  margin: 0 auto;
-  box-shadow: 0 0 2rem 0 #bbb;
-  line-height: 1.6;
+  font-size: 1.10rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
-article {
-  text-align: center;
-  padding: 3rem;
+main {
+	display: block;
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 0;
+
+}
+a {
+  color: #fafafa;
+}
+a:hover {
+  background: #ffdd55;
+  text-decoration: none;
+  color: #222222;
 }
 section {
-  background-color: #eee;
   padding: 1rem;
 }
 section input {
@@ -31,46 +47,55 @@ section input {
 }
 section button {
   padding: 0.5rem;
+}	
+header {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+  	background-color: #1e1e1e;
 }
-nav {
-  background-color: #17a;
+header li {
+	display:inline-block;
+	list-style:none;
+  	margin: 0 0.5rem;
+  	text-transform: uppercase;
 }
-nav ul {
+#nav_title {
+	font-size:1.2em;
+  margin-left: 2rem;
+}
+@media all and (max-width: 600px) {
+	header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+}	
+.song_list {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  
 }
-nav li {
-  padding: 0.5rem;
-  color:white;
+.song_list_item {
+	display: flex;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 5px;
+	text-transform: capitalize;
+	
 }
-nav li * {
-  display: block;
-}
-nav a {
-  text-decoration: none;
-}
-nav a, nav a:visited, nav a:active {
-  color: inherit;
-}
-nav a:hover {
-  background: #069;
-}
-nav strong {
-  color: white;
-  padding-right: 2rem;
-}
-ul {
-  list-style-type: none;
-}
-li {
-  margin: 5px;
+.song_list_songno {
+	display: flex;
 }
 footer {
-  background-color: #eee;
   text-align:center;
 }
 h3 {
   text-align: center;
 }
+

@@ -1,17 +1,10 @@
 
   {{define "main"}}
-  <section>
-  <div id="search"></div>
-<script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true });
-    });
-</script>
-  </section>
   <main>
-  	<ul>
+  {{partial "goToSong"}}
+  	<ul class = "song_list">
   	  	 {{ range .Pages.ByTitle }}
-  		<li>{{.Params.songno}}&nbsp;<a href = "{{.Permalink}}">{{.Title}}</a></li>
+  		<li class = "song_list_item"><span class = "song_list_songno">{{.Params.songno}}</span>&nbsp;<a href = "{{.Permalink}}">{{.Title}}</a></li>
   		{{end}}
 	</ul>
 </main>

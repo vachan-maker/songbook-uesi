@@ -1,44 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ or .Site.LanguageCode .Site.Language.Lang }}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <meta name="theme-color" content="#0d47a1"/>
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "img//apple-touch-icon.png" | absURL }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img//apple-touch-icon.png/favicon-32x32.png" | absURL }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "img//favicon-16x16.png" | absURL }}">
-  <script src="/pagefind/pagefind-ui.js"></script>
-  <script>
-  if ("serviceWorker" in navigator) {
-  // Register a service worker hosted at the root of the
-  // site using the default scope.
-  navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(
-    (registration) => {
-      console.log("Service worker registration succeeded:", registration);
-    },
-    (error) => {
-      console.error(`Service worker registration failed: ${error}`);
-    },
-  );
-} else {
-  console.error("Service workers are not supported.");
-}
-</script>
-    <title>{{ with .Title }}{{ printf "%s | " . }}{{ end }}{{ site.Title }}</title>
+  {{partial "head.html"}}
   </head>
   <body>
-  <header>
-    <nav>
-      <ul>
-      <li><strong><a href = "/">EU SongBook</a></strong></li>
-      <li><a href = "/malayalam">Malayalam</a></li>
-      <li><a href = "/hindi">Hindi</a></li>
-      <li><a href = "/tamil">Tamil</a></li>
-      </ul>
-    </nav>
-  </header>
+  {{partial "header.html"}}
     {{ block "main" . }}
     {{ end }}
   </body>
