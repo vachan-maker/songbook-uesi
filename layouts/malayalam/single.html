@@ -4,7 +4,10 @@
 {{if and .Params.transliterated .Params.lang "en"}}
 <p align = 'center'><a href = "/malayalam/{{.Params.songno}}">Malayalam Transliteration</a></p>
 {{  else  }}
-<p align = 'center'><a href = "/{{.Params.songno}}">English Transliteration</a></p>
+<p align = 'center'><a href = "/{{.Params.songno}}">Manglish</a></p>
+{{end}}
+{{if .Params.translated}}
+<p align = 'center'><a href = "/{{.Params.songno}}">Translation</a></p>
 {{end}}
 <i>{{.Params.artist}}</i>
 <i>Key: {{.Params.key}}</i>
