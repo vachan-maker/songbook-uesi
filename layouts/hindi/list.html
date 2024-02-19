@@ -1,27 +1,11 @@
 
   {{define "main"}}
-  <section>
-  <label for = 'SongNo'>Enter Song Number</label>
-  <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
-  <button onClick = 'redirectToSong()'>Go to Song</button>
-  <script>
-   function redirectToSong() {
-      // Get the user input from the text field
-      var songNumber = document.getElementById("SongNo").value;
-
-      // Construct the URL for redirection
-      var redirectURL = songNumber;
-
-      // Redirect the user
-      window.location.href = redirectURL;
-      }
-  </script>
-  </section>
   <main>
-  	<ul>
-  	  	 {{range (sort .Pages "Title")}}
-  		<li>{{.Params.songno}}&nbsp<a href = "{{.Permalink}}">{{.Title}}</a></li>
+  {{partial "goToSong"}}
+  	<ul class = "song_list">
+  	  	 {{ range .Pages.ByTitle }}
+  		<li class = "song_list_item" lang = "hi"><span class = "song_list_songno">{{.Params.songno}}</span>&nbsp;<a href = "{{.Permalink}}">{{.Title}}</a></li>
   		{{end}}
 	</ul>
 </main>
-{{end}} 
+{{end}}
