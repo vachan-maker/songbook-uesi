@@ -3,7 +3,7 @@
   <main>
   {{partial "goToSong"}}
   	<ul class = "song_list">
-  	  	 {{ range .Pages.ByTitle }}
+  	  	 {{ range .RegularPages.ByTitle }}
   		<li class = "song_list_item"><span class = "song_list_songno">{{.Params.songno}}</span>&nbsp;<a href = "{{.Permalink}}">{{.Title}}</a></li>
   		{{end}}
 	</ul>
