@@ -1,3 +1,6 @@
+{{ define "title"}}
+{{ .Title }} | {{ .Site.Params.author.name }}
+{{ end }}
 {{define "main"}}
 <main>
 <h1>{{.Params.songno}}. {{.Title}}</h1>

@@ -1,0 +1,5 @@
++++
+layouts = "search"
+url = "/search"
++++
+

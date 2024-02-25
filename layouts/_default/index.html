@@ -1,4 +1,6 @@
-
+{{ define "title"}}
+{{ .Title }} | {{ .Site.Params.author.name }}
+{{ end }}
   {{define "main"}}
   <main>
   {{partial "goToSong"}}

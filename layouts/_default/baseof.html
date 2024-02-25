@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ or .Site.LanguageCode .Site.Language.Lang }}">
   <head>
-  {{partial "head.html"}}
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+      {{ end }}</title>
+  {{partial "head.html" .}}
   </head>
   <body>
   <script data-goatcounter="https://songbookeu.goatcounter.com/count"
