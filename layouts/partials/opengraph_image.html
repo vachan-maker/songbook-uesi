@@ -1,0 +1,22 @@
+{{/* Generate opengraph image */}}
+{{- if .IsPage -}}
+  {{ $base := resources.Get "og_base.png" }}
+  {{ $img := $base.Filter (images.Text .Site.Title (dict
+    "color" "#ffffff"
+    "size" 52
+    "linespacing" 2
+    "x" 141
+    "y" 117
+  ))}}
+  {{ $img = $img.Filter (images.Text .Page.Title (dict
+    "color" "#ffffff"
+    "size" 64
+    "linespacing" 2
+    "x" 141
+    "y" 291
+  ))}} 
+  {{ $img = resources.Copy (path.Join .Page.RelPermalink "og.png") $img }}
+  <meta property="og:image" content="{{$img.Permalink}}">
+  <meta property="og:image:width" content="{{$img.Width}}" />
+  <meta property="og:image:height" content="{{$img.Height}}" />
+{{ end }}
