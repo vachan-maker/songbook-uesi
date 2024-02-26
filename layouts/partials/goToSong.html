@@ -1,8 +1,10 @@
 
-  <section class = "goToSong">
+  <section class="goToSong">
+
   <label for = 'SongNo'>Enter Song Number</label>
-  <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
-  <button onClick = 'redirectToSong()'>Go to Song</button>
+  <input type = 'text' id = 'SongNo' placeholder = 'Enter Song Number' required = "">
+
+  <button onClick = 'redirectToSong()'>Go to Song!</button>
   <script>
    function redirectToSong() {
       // Get the user input from the text field
@@ -15,4 +17,4 @@
       window.location.href = redirectURL;
       }
   </script>
-  </section>
+</section>
