@@ -5,21 +5,14 @@
     <link>https://uesisongs.netlify.app/artist/michael-ledner/</link>
     <description>Recent content in Michael Ledner on UESI SongBook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://uesisongs.netlify.app/artist/michael-ledner/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://uesisongs.netlify.app/artist/michael-ledner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>You are My Hiding Place</title>
       <link>https://uesisongs.netlify.app/350/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://uesisongs.netlify.app/350/</guid>
-      <description>You are my hiding place
-You always fill my heart,
-With songs of deliverance,
-Whenever I am afraid,
-I will trust in you, (2)
-Let the weak say,
-“I am strong in the strength of the Lord.”</description>
+      <description>You are my hiding place&#xA;You always fill my heart,&#xA;With songs of deliverance,&#xA;Whenever I am afraid,&#xA;I will trust in you, (2)&#xA;Let the weak say,&#xA;“I am strong in the strength of the Lord.”</description>
     </item>
-    
   </channel>
 </rss>

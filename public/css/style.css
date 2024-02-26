@@ -1,63 +1,191 @@
+@font-face {
+  font-family: "Manjari";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/fonts/Manjari-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+    U+0D01-0D7F, U+200C, U+200D, U+25CC;
+}
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+[lang = 'ml']
+{
+  font-family: 'Manjari';
+  font-size: 1.3srem;
+}
 body {
+  color: #fafafa;
+  background-color: #222222;
   font-family: sans-serif;
-  max-width: 48rem;
-  margin: 0 auto;
-  box-shadow: 0 0 2rem 0 #bbb;
+  font-size: 1.10rem;
   line-height: 1.6;
-}
-article {
-  text-align: center;
-  padding: 3rem;
-}
-section {
-  background-color: #eee;
-  padding: 1rem;
-}
-section input {
-  padding: 0.5rem;
-}
-section button {
-  padding: 0.5rem;
-}
-nav {
-  background-color: #17a;
-}
-nav ul {
-  display: flex;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-nav li {
-  padding: 0.5rem;
-  color:white;
+main {
+	display: block;
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 0;
+
 }
-nav li * {
-  display: block;
+a {
+  color: #fafafa;
 }
-nav a {
+a:hover {
+  background: #c3ec81;
   text-decoration: none;
+  color: #222222;
 }
-nav a, nav a:visited, nav a:active {
-  color: inherit;
+input {
+  padding: 0.5rem;
+  font-size: inherit;
+  font-family: inherit;
+  border:1px solid #898ea4;
+  background-color: #212121;
+  border-radius: 5px;
+  color: #fafafa;
+  box-shadow: none;
+  -moz-appearance: none;
 }
-nav a:hover {
-  background: #069;
+button {
+  padding: 0.5rem;
+  background-color: #aaccff;
+  font-size: inherit;
+  color: #212121;
+  border: 1px solid #aaccff;
+  border-radius: 5px;
 }
-nav strong {
-  color: white;
-  padding-right: 2rem;
+.goToSong {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-ul {
+#SongNo {
+  border-radius: 5px;
+}
+header {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 1rem;
+  	background-color: #1e1e1e;
+}
+header li {
+	display:inline-block;
+	list-style:none;
+  margin: 0 0.5rem;
+}
+#nav_title {
+	font-size:1.2em;
+  margin-left: 2rem;
+}
+.songTitle {
+  text-align: center;
+  text-transform: capitalize;
+}
+.songTitleBox {
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+}
+@media all and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+main{
+    padding:1.5rem;
+}
+}	
+.song_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
+  padding: 0;
+  
 }
-li {
-  margin: 5px;
+.song_list_item {
+	display: flex;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 5px;
+	text-transform: capitalize;
+	
+}
+.song_list_songno {
+	display: flex;
 }
 footer {
-  background-color: #eee;
   text-align:center;
 }
 h3 {
   text-align: center;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 0.96rem;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+/* Prevent long strings from overflowing container */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Fix line height when title wraps */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+

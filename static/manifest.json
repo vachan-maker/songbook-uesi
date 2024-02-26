@@ -1,7 +1,7 @@
 {
     "name": "UESI SongBook",
     "short_name": "UESI Songs",
-    "description": "The Songbook of UESI",
+    "description": "Collection of songs from the EU Songbook. Additional songs also have been added. This is not an official app.",
     "start_url": "/",
     "display": "standalone",
     "orientation": "portrait",
@@ -26,5 +26,51 @@
         "type": "image/png",
         "purpose": "any maskable"
     }
-    ]
+    ],
+    "screenshots": [
+  {
+    "src": "/screenshots/home.png",
+    "sizes": "1280x720",
+    "type": "image/png",
+    "form_factor": "wide",
+    "label": "Homescreen of EU SongBook App"
+  },
+  {
+    "src": "screenshots/song.png",
+    "sizes": "1280x720",
+    "type": "image/png",
+    "form_factor": "wide",
+    "label": "A page which displays a song"
+  },
+  {
+    "src": "screenshots/malayalam.png",
+    "sizes": "1280x720",
+    "type": "image/png",
+    "form_factor": "wide",
+    "label": "List of Malayalam songs"
+  },
+  {
+    "src": "screenshots/homeNarrow.png",
+    "sizes": "540x720",
+    "type": "image/png",
+    "form_factor": "narrow",
+    "label": "Home screen of app on mobile devices"
+
+  },
+  {
+    "src": "screenshots/listNarrow.png",
+    "sizes": "540x720",
+    "type": "image/png",
+    "form_factor": "narrow",
+    "label": "List of Malayalam songs"
+  },
+  {
+    "src": "screenshots/songNarrow.png",
+    "sizes": "540x720",
+    "type": "image/png",
+    "form_factor": "narrow",
+    "label": "Song"
+  }
+  
+]
 }

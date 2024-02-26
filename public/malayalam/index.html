@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <meta name="theme-color" content="#0d47a1"/>
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://uesisongs.netlify.app/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://uesisongs.netlify.app/img/apple-touch-icon.png/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://uesisongs.netlify.app/img/favicon-16x16.png">
-  <script src="/pagefind/pagefind-ui.js"></script>
-    <title>UESI SongBook</title>
+    <title>
+Malayalam | 
+</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta property="og:title" content="Malayalam" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://uesisongs.netlify.app/malayalam/" />
+
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0d47a1"/>
+<link rel="manifest" href="/manifest.json" />
+<link rel="stylesheet" href="/css/style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="https://uesisongs.netlify.app/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://uesisongs.netlify.app/img/apple-touch-icon.png/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://uesisongs.netlify.app/img/favicon-16x16.png">
+<link rel="prefetch" href="/malayalam" as="document">
+<link rel="prefetch" href="/hindi" as="document">
+<link rel="prefetch" href="/tamil" as="document">
+<script src="/pagefind/pagefind-ui.js"></script>
+
   </head>
   <body>
-  <header>
+  <script data-goatcounter="https://songbookeu.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+   <header>
+  <h1 id = "nav_title"><a href= "/">EU SongBook</a></h1>
     <nav>
       <ul>
-      <li><strong><a href = "/">EU SongBook</a></strong></li>
       <li><a href = "/malayalam">Malayalam</a></li>
       <li><a href = "/hindi">Hindi</a></li>
       <li><a href = "/tamil">Tamil</a></li>
+      <li><a href = "/search">Search</a></li>
       </ul>
     </nav>
   </header>
+
     
-  <section>
+  <main>
+  
+  <section class="goToSong">
+
   <label for = 'SongNo'>Enter Song Number</label>
-  <input type = 'number' id = 'SongNo' placeholder = 'Enter Song Number'>
-  <button onClick = 'redirectToSong()'>Go to Song</button>
+  <input type = 'text' id = 'SongNo' placeholder = 'Enter Song Number' required = "">
+
+  <button onClick = 'redirectToSong()'>Go to Song!</button>
   <script>
    function redirectToSong() {
       
@@ -40,13 +62,19 @@
       window.location.href = redirectURL;
       }
   </script>
-  </section>
-  <main>
-  	<ul>
+</section>
+
+  	<ul class = "song_list">
   	  	 
-  		<li>&nbsp<a href = "https://uesisongs.netlify.app/malayalam/2/"></a></li>
+  		<li class = "song_list_item" lang = "ml"><span class = "song_list_songno">1</span>&nbsp;<a href = "https://uesisongs.netlify.app/malayalam/1/">ഇന്നയോളം എന്നെ നടത്തി</a></li>
   		
-  		<li>1&nbsp<a href = "https://uesisongs.netlify.app/malayalam/1/">ഇന്നയോളം എന്നെ നടത്തി</a></li>
+  		<li class = "song_list_item" lang = "ml"><span class = "song_list_songno">367</span>&nbsp;<a href = "https://uesisongs.netlify.app/malayalam/367/">നീ എന്‍റെ സങ്കേതവും നീ എന്‍റെ കോട്ടയും </a></li>
+  		
+  		<li class = "song_list_item" lang = "ml"><span class = "song_list_songno">a1</span>&nbsp;<a href = "https://uesisongs.netlify.app/malayalam/a1/">നീ എന്റെ സർവവും നീ എനിക്കുള്ളവൻ</a></li>
+  		
+  		<li class = "song_list_item" lang = "ml"><span class = "song_list_songno"></span>&nbsp;<a href = "https://uesisongs.netlify.app/malayalam/bhayamo-ini-ennil-sthanamilla/">ഭയമോ ഇനി എന്നിൽ സ്ഥാനമില്ല </a></li>
+  		
+  		<li class = "song_list_item" lang = "ml"><span class = "song_list_songno"></span>&nbsp;<a href = "https://uesisongs.netlify.app/malayalam/bless-the-lord/">വാഴ്ത്തുക മനമേ ഓ മനമേ </a></li>
   		
 	</ul>
 </main>
