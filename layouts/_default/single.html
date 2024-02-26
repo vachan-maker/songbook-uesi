@@ -5,14 +5,14 @@
 <main>
 <header class="songTitleBox">
 <h2 class="songTitle">{{.Params.songno}}. {{.Title}}</h2>
+<p class="meta">{{ .Params.artist }} | Key: {{ .Params.key }}</p>
 </header>
 {{if and .Params.transliterated .Params.lang "en"}}
 <p align = 'center'><a href = "/malayalam/{{.Params.songno}}">Malayalam Transliteration</a></p>
 {{  else  }}
 <p align = 'center'><a href = "/{{.Params.songno}}">English Transliteration</a></p>
 {{end}}
-<i>{{.Params.artist}}</i>
-<i>Key: {{.Params.key}}</i>
   <article>{{.Content}}</article>
+  <a href="whatsapp://send?text={{ .Title }} - {{ .Permalink }}" data-action="share/whatsapp/share">Share via WhatsApp</a>
 </main>
 {{end}}
