@@ -1,11 +1,9 @@
 @font-face {
-  font-family: "Manjari";
+  font-family: "RIT-MeeraNew";
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url('/fonts/Manjari-Regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
-    U+0D01-0D7F, U+200C, U+200D, U+25CC;
+  src: url('/fonts/RIT-MeeraNew.woff2') format('woff2');
 }
 html {
     scroll-behavior: smooth;
@@ -13,8 +11,9 @@ html {
 }
 [lang = 'ml']
 {
-  font-family: 'Manjari';
-  font-size: 1.3srem;
+  font-family: 'RIT-MeeraNew';
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 body {
   color: #fafafa;
