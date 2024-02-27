@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "UESI SongBook"
 [taxonomies]
     artist = "artist"
+[module]
+  [module.hugoVersion]
+    min = "0.114.0"
