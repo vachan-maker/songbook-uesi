@@ -1,5 +1,6 @@
 +++
 layouts = "search"
-url = "/search"
+url = "/search/"
 +++
+
 

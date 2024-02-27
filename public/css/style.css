@@ -86,8 +86,16 @@ header li {
   text-transform: capitalize;
 }
 .songTitleBox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   padding: 1rem 0.5rem;
   border-radius: 10px;
+}
+.meta {
+  display:inline-flex;
+  font-style: italic;
 }
 @media all and (max-width: 600px) {
   header {

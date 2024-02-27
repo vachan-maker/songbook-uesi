@@ -2,9 +2,9 @@
 {{ .Title }} | {{ .Site.Params.author.name }}
 {{ end }}
 {{define "main"}}
-<main>
+<main data-pagefind-body>
 <header class="songTitleBox">
-<h2 class="songTitle">{{.Params.songno}}. {{.Title}}</h2>
+<h2 class="songTitle" data-pagefind-meta="title">{{.Params.songno}}. {{.Title}}</h2>
 <p class="meta">{{ .Params.artist }} | Key: {{ .Params.key }}</p>
 </header>
 {{if and .Params.transliterated .Params.lang "en"}}
