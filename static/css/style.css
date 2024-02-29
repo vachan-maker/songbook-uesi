@@ -58,6 +58,9 @@ button {
   border: 1px solid #aaccff;
   border-radius: 5px;
 }
+#install {
+  height: 50%;
+}
 .goToSong {
   display: flex;
   flex-direction: column;
@@ -70,7 +73,8 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 1rem;
-  	background-color: #1e1e1e;
+  background-color: #1e1e1e;
+  align-items: baseline;
 }
 header li {
 	display:inline-block;
