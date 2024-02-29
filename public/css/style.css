@@ -51,7 +51,7 @@ input {
   -moz-appearance: none;
 }
 button {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: #aaccff;
   font-size: inherit;
   color: #212121;
@@ -60,6 +60,9 @@ button {
 }
 #install {
   height: 50%;
+  display: none;
+  top: 1rem;
+  right: 1rem;
 }
 .goToSong {
   display: flex;
@@ -102,6 +105,10 @@ header li {
   font-style: italic;
 }
 @media all and (max-width: 600px) {
+header {
+  display: flex;
+  justify-content: space-between;
+}
 nav {
   background-color: #1e1e1e;
   overflow: hidden;
@@ -109,15 +116,19 @@ nav {
   bottom: 0;
   width: 100%;
   overflow-x: auto;
+  border-top: 2px solid #aaccff;
 }
 nav ul {
   display: flex;
   justify-content: space-between;
   padding: 0;
 }
+nav li {
+  font-size: 1rem;
+}
 nav li a {
-  padding: 0.5rem;
   text-decoration: none;
+  padding: 1rem 0.5rem;
 }
 main{
     padding:1.5rem;
@@ -213,8 +224,14 @@ h3 {
 }
 @media (display-mode: browser) {
   #install {
+    display: block;
+  }
+}
+@media (display-mode: standalone) {
+  #install {
     display: none;
   }
+  
 }
 #Wshare a{
   color: #25d366;
